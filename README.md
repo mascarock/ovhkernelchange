@@ -54,4 +54,6 @@ update-grub
 Now reboot your server and cross your fingers. Once the server is back up, you can verify the correct kernel has loaded with uname. Then
 
 apt-get source linux-image-$(uname -r)
+sudo apt-get install linux-headers-$(uname -r)
+
 

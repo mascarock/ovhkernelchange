@@ -51,4 +51,7 @@ GRUB_DEFAULT=1
 Now re-update the GRUB configuration (and this is important) with: Code:
 
 update-grub
-Now reboot your server and cross your fingers. Once the server is back up, you can verify the correct kernel has loaded with uname, ie:
+Now reboot your server and cross your fingers. Once the server is back up, you can verify the correct kernel has loaded with uname. Then
+
+apt-get source linux-image-$(uname -r)
+
